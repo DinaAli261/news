@@ -8,4 +8,29 @@ class AppTextStyles {
     fontSize: 20,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle white20Medium = GoogleFonts.inter(
+    color: AppColors.white,
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle black14Medium = GoogleFonts.inter(
+    color: AppColors.black,
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle white14Medium = GoogleFonts.inter(
+    color: AppColors.white,
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle black16Bold = GoogleFonts.inter(
+    color: AppColors.black,
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle white16Bold = GoogleFonts.inter(
+    color: AppColors.white,
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+  );
 }
