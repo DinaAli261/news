@@ -14,6 +14,8 @@ class AppTheme {
     ),
       textTheme: TextTheme(
         headlineLarge: AppTextStyles.black20Medium,
+        headlineMedium: AppTextStyles.black24Medium,
+        bodyLarge: AppTextStyles.white32Medium,
         labelMedium: AppTextStyles.black14Medium,
         labelLarge: AppTextStyles.black16Bold,
       )
@@ -30,6 +32,8 @@ class AppTheme {
     ),
       textTheme: TextTheme(
         headlineLarge: AppTextStyles.white20Medium,
+        headlineMedium: AppTextStyles.white24Medium,
+        bodyLarge: AppTextStyles.black32Medium,
         labelMedium: AppTextStyles.white14Medium,
         labelLarge: AppTextStyles.white16Bold,
       )

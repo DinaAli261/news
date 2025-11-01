@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/home/category_details/widgets/source_name.dart';
+import 'package:news_app/home/news/news_widget.dart';
 import 'package:news_app/model/SourceResponse.dart';
 import 'package:news_app/utils/app_colors.dart';
 
@@ -37,6 +38,8 @@ class _SourceTabWidgetState extends State<SourceTabWidget> {
               );
             }).toList(),
           ),
+          Expanded(
+              child: NewsWidget(source: widget.sourcesList[selectedIndex])),
         ],
       ),
     );

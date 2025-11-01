@@ -33,4 +33,39 @@ class AppTextStyles {
     fontSize: 16,
     fontWeight: FontWeight.bold,
   );
+  static TextStyle grey12Medium = GoogleFonts.inter(
+    color: AppColors.grey,
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle white24Medium = GoogleFonts.inter(
+    color: AppColors.white,
+    fontSize: 24,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle black24Medium = GoogleFonts.inter(
+    color: AppColors.black,
+    fontSize: 24,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle black32Medium = GoogleFonts.inter(
+    color: AppColors.black,
+    fontSize: 32,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle white32Medium = GoogleFonts.inter(
+    color: AppColors.white,
+    fontSize: 32,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle black24Bold = GoogleFonts.inter(
+    color: AppColors.black,
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle white20Bold = GoogleFonts.inter(
+    color: AppColors.white,
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
 }
