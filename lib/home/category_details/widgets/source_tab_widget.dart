@@ -6,8 +6,9 @@ import 'package:news_app/utils/app_colors.dart';
 
 class SourceTabWidget extends StatefulWidget {
   final List<Sources> sourcesList;
+  String? searchText;
 
-  SourceTabWidget({super.key, required this.sourcesList});
+  SourceTabWidget({super.key, required this.sourcesList, this.searchText});
 
   @override
   State<SourceTabWidget> createState() => _SourceTabWidgetState();
@@ -25,6 +26,7 @@ class _SourceTabWidgetState extends State<SourceTabWidget> {
           TabBar(
             onTap: (index) {
               selectedIndex = index;
+
               setState(() {});
             },
             isScrollable: true,
@@ -39,7 +41,10 @@ class _SourceTabWidgetState extends State<SourceTabWidget> {
             }).toList(),
           ),
           Expanded(
-              child: NewsWidget(source: widget.sourcesList[selectedIndex])),
+              child: NewsWidget(
+                key: ValueKey(widget.sourcesList[selectedIndex].id),
+                source: widget.sourcesList[selectedIndex],
+                searchText: widget.searchText,)),
         ],
       ),
     );

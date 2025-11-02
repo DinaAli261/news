@@ -6,7 +6,10 @@ import 'package:news_app/home/drawer/widget/drawer_item.dart';
 import 'package:news_app/l10n/app_localizations.dart';
 import 'package:news_app/utils/app_colors.dart';
 import 'package:news_app/utils/app_text_styles.dart';
+import 'package:provider/provider.dart';
 
+import '../../providers/app_language_provider.dart';
+import '../../providers/app_theme_provider.dart';
 import '../../utils/app_images.dart';
 import 'language/language_bottom_sheet.dart';
 
@@ -23,6 +26,12 @@ class _HomeDrawerState extends State<HomeDrawer> {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
+    var languageProvider = Provider.of<AppLanguageProvider>(context);
+    var selectedLanguage = languageProvider.appLanguage;
+    var themeProvider = Provider.of<AppThemeProvider>(context);
+    var selectedTheme = themeProvider.appTheme;
+    bool isENG = selectedLanguage == 'en';
+    bool isLight = selectedTheme == ThemeMode.light;
     return Column(
       children: [
         Container(
@@ -52,7 +61,9 @@ class _HomeDrawerState extends State<HomeDrawer> {
         ),
         InkWell(
           onTap: () => showThemeBottomSheet(),
-          child: AppConfigItem(text: AppLocalizations.of(context)!.light),
+          child: AppConfigItem(text: (isLight)
+              ? AppLocalizations.of(context)!.light
+              : AppLocalizations.of(context)!.dark),
         ),
         DividerItem(),
         DrawerItem(
@@ -61,7 +72,9 @@ class _HomeDrawerState extends State<HomeDrawer> {
         ),
         InkWell(
           onTap: () => showLanguageBottomSheet(),
-          child: AppConfigItem(text: AppLocalizations.of(context)!.english),
+          child: AppConfigItem(text: (isENG)
+              ? AppLocalizations.of(context)!.english
+              : AppLocalizations.of(context)!.arabic),
         ),
       ],
     );

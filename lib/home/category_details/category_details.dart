@@ -8,9 +8,10 @@ import 'package:news_app/utils/app_colors.dart';
 class CategoryDetails extends StatefulWidget {
   String language;
   String categoryId;
+  String? searchText;
 
   CategoryDetails(
-      {super.key, required this.categoryId, required this.language});
+      {super.key, required this.categoryId, required this.language, this.searchText});
 
   @override
   State<CategoryDetails> createState() => _CategoryDetailsState();
@@ -80,7 +81,8 @@ class _CategoryDetailsState extends State<CategoryDetails> {
           );
         }
         var sourcesList = snapshot.data?.sources ?? [];
-        return SourceTabWidget(sourcesList: sourcesList);
+        return SourceTabWidget(
+          sourcesList: sourcesList, searchText: widget.searchText,);
       },
     );
   }

@@ -18,5 +18,8 @@
 "science":"Science",
 "view_all":"View All",
 "something_went_wrong":"Something Went Wrong",
-"try_again":"Try Again"
+"try_again":"Try Again",
+"search":"Search",
+"load_more":"Load More",
+"please_select_news_category":"Please select News Category"
 }

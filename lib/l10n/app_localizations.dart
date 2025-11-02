@@ -217,6 +217,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Try Again'**
   String get try_again;
+
+  /// No description provided for @search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// No description provided for @load_more.
+  ///
+  /// In en, this message translates to:
+  /// **'Load More'**
+  String get load_more;
+
+  /// No description provided for @please_select_news_category.
+  ///
+  /// In en, this message translates to:
+  /// **'Please select News Category'**
+  String get please_select_news_category;
 }
 
 class _AppLocalizationsDelegate

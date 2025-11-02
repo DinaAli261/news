@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:news_app/home/home.dart';
+import 'package:news_app/home/news/web_view.dart';
 import 'package:news_app/providers/app_language_provider.dart';
 import 'package:news_app/providers/app_theme_provider.dart';
 import 'package:news_app/utils/app_routes.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoutes.homeRouteName,
       routes: {
         AppRoutes.homeRouteName: (context) => Home(),
+        AppRoutes.webViewRouteName: (context) => WebViewScreen(),
       },
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,

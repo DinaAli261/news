@@ -69,4 +69,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get try_again => 'جرب مجددا';
+
+  @override
+  String get search => 'بحث';
+
+  @override
+  String get load_more => 'حمل المزيد';
+
+  @override
+  String get please_select_news_category => 'من فضلك اختار نوع الاخبار';
 }

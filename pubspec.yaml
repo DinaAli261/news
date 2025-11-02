@@ -43,6 +43,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: any
+  webview_flutter: ^4.13.0
 
 flutter_native_splash:
   background_image: "assets/images/splash_light.png"

@@ -69,4 +69,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get try_again => 'Try Again';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get load_more => 'Load More';
+
+  @override
+  String get please_select_news_category => 'Please select News Category';
 }
