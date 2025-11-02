@@ -14,9 +14,13 @@ class AppTheme {
     ),
       textTheme: TextTheme(
         headlineLarge: AppTextStyles.black20Medium,
+        headlineMedium: AppTextStyles.black24Medium,
+        bodyLarge: AppTextStyles.white32Medium,
         labelMedium: AppTextStyles.black14Medium,
         labelLarge: AppTextStyles.black16Bold,
-      )
+      labelSmall: AppTextStyles.white14Medium,
+      titleSmall: AppTextStyles.white24Medium,
+    ),
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -30,8 +34,12 @@ class AppTheme {
     ),
       textTheme: TextTheme(
         headlineLarge: AppTextStyles.white20Medium,
+        headlineMedium: AppTextStyles.white24Medium,
+        bodyLarge: AppTextStyles.black32Medium,
         labelMedium: AppTextStyles.white14Medium,
         labelLarge: AppTextStyles.white16Bold,
-      )
+      labelSmall: AppTextStyles.black14Medium,
+      titleSmall: AppTextStyles.black24Medium,
+    ),
   );
 }
